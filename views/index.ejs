@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styleCam.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"> </script>
+
+    <script src="cam.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    
+   
+        <h1>Object detection</h1>
+
+    
+            <section id="demos" class="invisible">
+
+                <p>Hold some objects up close to your webcam to get a real-time classification! When ready click "enable webcam" below and accept access to the webcam when the browser asks (check the top left of your window)</p>
+                
+                <div id="liveView" class="camView">
+                  <button id="webcamButton">Enable Webcam</button><button id="stop">stop</button>
+                  <video id="webcam" autoplay muted width="640" height="480"></video>
+                </div>
+
+                <!-- comment if another model : -->
+                <div id="affichage"></div>
+                <!-- end comment  -->
+            </section>
+              
+            
+    
