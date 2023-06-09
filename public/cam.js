@@ -140,9 +140,11 @@ function renderBoxes(containeur, boxes_data, scores_data, classes_data, ratios) 
   // comment or suppr if another model :
   if (epi != 2) {
     info.innerText = "mettez vos équipements de sécurité !";
-    
+    info.style.color = "red";
   } else {
-    info.innerText = "équipements de sécurité ok"
+    info.innerText = "équipements de sécurité ok";
+    info.style.color = "blue";
+
   }
   // end comment
 }
@@ -178,7 +180,6 @@ function stopVideo() {
   video.srcObject.getTracks().forEach((track) => {
       if (track.readyState == 'live') {
           track.stop();
-      
       }
   });
   enableWebcamButton.classList.remove('removed');

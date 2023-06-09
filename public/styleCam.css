@@ -1,12 +1,13 @@
 body {
     font-family: helvetica, arial, sans-serif;
     margin: 2em;
-    color: #3D3D3D;
+    color: black;
   }
   
   h1 {
     font-style: italic;
-    color: #FF6F00;
+    color: black;
+    text-align: center;
   }
   
   video {
@@ -16,6 +17,8 @@ body {
   section {
     opacity: 1;
     transition: opacity 500ms ease-in-out;
+    width: 650px;
+    margin:auto;
   }
 
   .removed {
@@ -37,7 +40,7 @@ body {
   .camView p {
     position: absolute;
     padding: 5px;
-    background-color: rgba(255, 111, 0, 0.85);
+    background-color: rgba(75, 62, 146, 0.5);
     color: #FFF;
     border: 1px dashed rgba(255, 255, 255, 0.7);
     z-index: 2;
@@ -45,8 +48,29 @@ body {
   }
   
   .highlighter {
-    background: rgba(0, 255, 0, 0.25);
+    background-color: rgba(204, 197, 241, 0.5);
     border: 1px dashed #fff;
     z-index: 1;
     position: absolute;
+  }
+
+  #affichage{
+    text-align:center;
+    font-size: 150%;
+    font-weight: bold;
+  }
+
+
+  button {
+    /* background-color: blue; */
+    background-color: rgba(28, 13, 102, 0.72);
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
   }
