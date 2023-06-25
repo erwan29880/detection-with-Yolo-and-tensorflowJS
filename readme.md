@@ -2,6 +2,7 @@
 
 ![cap](app.png)
 
+[Démo](https://erwan-diato.com/ml/detection/index.php)  
 
 Un modèle est entraîné en python avec YoloV5 par transfer learning afin d'identifer le port d'un casque de chantier ou d'une veste de sécurité, puis exporté au format tensorflow.js : 
 
